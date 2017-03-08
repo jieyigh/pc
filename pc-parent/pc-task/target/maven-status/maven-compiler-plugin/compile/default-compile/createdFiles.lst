@@ -1,0 +1,6 @@
+com\ds\task\Main.class
+com\ds\task\tasklist\AbstractTask.class
+com\ds\task\tasklist\TaskList.class
+com\ds\task\betinfo\GenerateBetTableTask.class
+com\ds\task\betinfo\GenerateYesterdayDataTask.class
+com\ds\task\vo\MinMaxId.class

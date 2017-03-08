@@ -1,0 +1,95 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+#   url: jdbc:mysql://10.0.0.207:3306/pc_game?useUnicode\=true&characterEncoding\=utf8&autoReconnect\=true
+    url: jdbc:mysql://localhost:3306/local_pc_game
+    username: root
+    password: root
+#   password: aYXL1OwrUtyIGhV7rQb1JrBYEknfhxaDvNsfVTVUl2Ud/8yfVfrTG80qsmmAUTTY7PvbU7MWa286za5QQSEJ1w==
+    connectionProperties: config.decrypt=false;
+    initialSize: 5
+    minIdle: 5
+    maxActive: 100
+    maxWait: 60000
+    validationQuery: SELECT 1
+    filters: config,stat
+    testWhileIdle: true
+    removeAbandoned: true
+    removeAbandonedTimeout: 180
+    logAbandoned: true
+
+#reids
+  redis: 
+    database: 1 
+    host: 10.10.100.170
+    password: 
+    port: 6379
+    pool: 
+      max-idle: 300
+      min-idle: 100
+      max-active: 300
+      max-wait: -1
+    timeout: 2000
+    
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+
+server:
+  port: 8111
+  context-path: /pc-lottery-result-task
+
+security:
+  basic:
+    enabled: false
+    
+management:
+  security:
+    enabled: false
+    
+beijing: 
+  welfare: 
+    lottery: http://www.bwlc.net/bulletin/keno.html
+keno: 
+  offical: 
+    lottery: https://www.playnow.com/services2/keno/draw/latest/
+ourself: 
+  server: 
+    lottery: http://pcgame.result.dt778899.com:8088/lucky-monitor/lottery/getArrayResult.do?code={0}&page={1}&pagesize={2}
+lucky360: 
+  lottery: http://cp.360.cn/i/lotapi.html?datatype=json&do=qkjcode&lotID=265108&issue={0}&t={1}
+  
+kai168:
+  lottery: http://old.1680210.com/Open/CurrentOpen?code={0}
+  
+pc588: 
+  lottery: http://pc588.com/{0}
+  
+ag: 
+  lottery: https://www.agpc28.com/Game/getresult?cid={0}
+  
+cp16: 
+  lottery: http://www.16cp.com/Game/GetNum.aspx?iType=3
+  
+xjssc: 
+  lottery: http://www.xjflcp.com/game/sscIndex
+
+zao: 
+  lottery: https://api.zao28.com/News?name={0}&type=json
+  
+kai168new:
+  lottery: http://api.1680210.com/CQShiCai/getBaseCQShiCaiList.do?lotCode={0}
+  
+agpc28: 
+  lottery: https://www.agpc28.com/index/codes
+
+kj500:
+  lottery: http://kaijiang.500.com/static/info/kaijiang/xml/xjssc/{0}.xml
+
+#北京时间：8，北京时间-12:4
+time:  
+   zone: 4
+    
+    

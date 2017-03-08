@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.10.200.255:3306/pc_game?useUnicode\=true&characterEncoding\=utf8&autoReconnect\=true
+    username: root
+    password: OKQjzN7dN1TZVUuxtReBTHY44cp15didXxB1HMJZhrydOZ58Dwy4qm5rNUfpj7fIv4YEvX5eO2d4SsI3aQGZhA==
+    connectionProperties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJ0StQ+Xh9habvDCXqB1TOMkBaco8xReSYYuRhJS8KqRJIPxUhiiIcNTgfIeEqp5IpDJwQG0Xs1oLkIrsqHoIdUCAwEAAQ==
+    initialSize: 5
+    minIdle: 5
+    maxActive: 100
+    maxWait: 60000
+    validationQuery: SELECT 1
+    filters: config,stat
+    testWhileIdle: true
+    removeAbandoned: true
+    removeAbandonedTimeout: 180
+    logAbandoned: true
+
+#reids
+  redis:
+    database: 1 
+    host: 10.10.200.254
+    password: ZDU0NTlkNDY5NWZi
+    port: 6379
+    pool: 
+      max-idle: 300
+      min-idle: 100
+      max-active: 300
+      max-wait: -1
+    timeout: 2000
+    
+  jpa:
+    properties:
+      hibernate:
+        show_sql: false
+
+server:
+  port: 8096
+  context-path: /pc-lottery-result
+
+security:
+  basic:
+    enabled: false
+    
+management:
+  security:
+    enabled: false

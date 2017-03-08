@@ -1,0 +1,6 @@
+com\ds\room\controller\RoomInfoController.class
+com\ds\room\service\impl\SiteConfigServiceImpl.class
+com\ds\room\vo\RoomParams.class
+com\ds\room\Main.class
+com\ds\room\service\SiteConfigService.class
+com\ds\room\controller\BasicController.class

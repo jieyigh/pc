@@ -1,0 +1,336 @@
+15:07:28.539 [main] INFO  com.ds.Main - Starting Main on jackson-PC with PID 17104 (G:\workspace\sts_workspace20160726\pc-bet\target\classes started by jackson in G:\workspace\sts_workspace20160726\pc-bet) 
+15:07:28.568 [main] INFO  com.ds.Main - No active profile set, falling back to default profiles: default 
+15:07:28.616 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ec06d57: startup date [Sun Oct 16 15:07:28 CST 2016]; root of context hierarchy 
+15:07:29.806 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d9595a96] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+15:07:30.156 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+15:07:30.164 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat 
+15:07:30.165 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5 
+15:07:30.262 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+15:07:30.262 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1646 ms 
+15:07:30.399 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+15:07:30.401 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*] 
+15:07:30.402 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+15:07:30.913 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+15:07:30.947 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' 
+15:07:30.961 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+15:07:31.023 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final} 
+15:07:31.024 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+15:07:31.025 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+15:07:31.059 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final} 
+15:07:31.241 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+15:07:31.587 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory 
+15:07:31.680 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+15:07:32.035 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/bet{tableId}/{gameType}/{term}/{username}],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public void com.ds.controller.BetInfoController.bet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) 
+15:07:32.043 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+15:07:32.044 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+15:07:32.080 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler] 
+15:07:32.132 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ec06d57: startup date [Sun Oct 16 15:07:28 CST 2016]; root of context hierarchy 
+15:07:32.268 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: cf851dca-b5c9-42c7-8a85-e46b1a9b9f71
+ 
+15:07:32.382 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56526fc5, org.springframework.security.web.context.SecurityContextPersistenceFilter@276dd4d8, org.springframework.security.web.header.HeaderWriterFilter@2483036a, org.springframework.security.web.authentication.logout.LogoutFilter@31ff5060, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b4d7efe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@142e209c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e281ac9, org.springframework.security.web.session.SessionManagementFilter@7d772864, org.springframework.security.web.access.ExceptionTranslationFilter@2f7acc3e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21a3562] 
+15:07:32.821 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+15:07:32.822 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+15:07:32.825 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+15:07:32.875 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+15:07:32.879 [main] INFO  com.ds.Main - Started Main in 4.643 seconds (JVM running for 4.997) 
+15:08:26.299 [main] INFO  com.ds.Main - Starting Main on jackson-PC with PID 16632 (G:\workspace\sts_workspace20160726\pc-bet\target\classes started by jackson in G:\workspace\sts_workspace20160726\pc-bet) 
+15:08:26.306 [main] INFO  com.ds.Main - No active profile set, falling back to default profiles: default 
+15:08:26.347 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca4f977: startup date [Sun Oct 16 15:08:26 CST 2016]; root of context hierarchy 
+15:08:27.592 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$82d24c91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+15:08:27.951 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+15:08:27.960 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat 
+15:08:27.960 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5 
+15:08:28.060 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+15:08:28.061 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1714 ms 
+15:08:28.218 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+15:08:28.220 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*] 
+15:08:28.220 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+15:08:28.791 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+15:08:28.821 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' 
+15:08:28.834 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+15:08:28.893 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final} 
+15:08:28.894 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+15:08:28.895 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+15:08:28.930 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final} 
+15:08:29.108 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+15:08:29.451 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory 
+15:08:29.545 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+15:08:29.924 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/bet/{tableId}/{gameType}/{term}/{username}],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public void com.ds.controller.BetInfoController.bet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) 
+15:08:29.930 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+15:08:29.931 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+15:08:29.967 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler] 
+15:08:30.022 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca4f977: startup date [Sun Oct 16 15:08:26 CST 2016]; root of context hierarchy 
+15:08:30.159 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 10c41a96-5433-4582-803d-79ff7ee04a41
+ 
+15:08:30.277 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6eaadd1d, org.springframework.security.web.context.SecurityContextPersistenceFilter@20b5e4a, org.springframework.security.web.header.HeaderWriterFilter@755dab55, org.springframework.security.web.authentication.logout.LogoutFilter@49a44beb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76e1a75, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cd05f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@139ad3ae, org.springframework.security.web.session.SessionManagementFilter@e5aa8ef, org.springframework.security.web.access.ExceptionTranslationFilter@4c7d003a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ff162fe] 
+15:08:30.675 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+15:08:30.676 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+15:08:30.680 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+15:08:30.734 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+15:08:30.739 [main] INFO  com.ds.Main - Started Main in 4.754 seconds (JVM running for 5.113) 
+15:15:09.908 [main] INFO  com.ds.Main - Starting Main on jackson-PC with PID 17884 (G:\workspace\sts_workspace20160726\pc-bet\target\classes started by jackson in G:\workspace\sts_workspace20160726\pc-bet) 
+15:15:09.913 [main] INFO  com.ds.Main - No active profile set, falling back to default profiles: default 
+15:15:09.953 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79513c2b: startup date [Sun Oct 16 15:15:09 CST 2016]; root of context hierarchy 
+15:15:11.195 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec27edfc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+15:15:11.549 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+15:15:11.557 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat 
+15:15:11.558 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5 
+15:15:11.645 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+15:15:11.645 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1692 ms 
+15:15:11.778 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+15:15:11.780 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*] 
+15:15:11.780 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+15:15:12.311 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+15:15:12.343 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' 
+15:15:12.357 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+15:15:12.417 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final} 
+15:15:12.418 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+15:15:12.419 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+15:15:12.454 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final} 
+15:15:12.642 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+15:15:13.031 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory 
+15:15:13.130 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+15:15:13.502 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/bet/{tableId}/{gameType}/{term}/{username}],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public void com.ds.controller.BetInfoController.bet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) 
+15:15:13.506 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+15:15:13.507 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+15:15:13.542 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler] 
+15:15:13.593 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79513c2b: startup date [Sun Oct 16 15:15:09 CST 2016]; root of context hierarchy 
+15:15:13.764 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 3a813c03-0e3e-454b-bb65-90acb01dc981
+ 
+15:15:13.878 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6cc9ebef, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a85dccb, org.springframework.security.web.header.HeaderWriterFilter@38881ab9, org.springframework.security.web.authentication.logout.LogoutFilter@600dd87, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@493ce1af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75778a9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ca0cfb5, org.springframework.security.web.session.SessionManagementFilter@46bafa68, org.springframework.security.web.access.ExceptionTranslationFilter@4883f68f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@448d79ee] 
+15:15:14.284 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+15:15:14.285 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+15:15:14.289 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+15:15:14.334 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+15:15:14.337 [main] INFO  com.ds.Main - Started Main in 4.743 seconds (JVM running for 5.086) 
+15:20:50.104 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+15:20:50.105 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+15:20:50.125 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms 
+15:20:50.160 [http-nio-8080-exec-1] INFO  com.ds.controller.BetInfoController - username = test, term = 10000, tableId = 105, betMsg = {"hashCode":"djhfalhdflhjasfljdhasfilsf","command":"login","params":{"username":"p200eb252a8b0d","gameType":"fenfen","action":"c20ad4d76fe97759aa27a09515 48drff","line":"jpzbing","billno":"147628137292458","fromLive":"12","key":"7157bae0f305fe809d03c1a816cfcc6a44574"}} 
+15:21:38.710 [http-nio-8080-exec-2] INFO  com.ds.controller.BetInfoController - username = test, term = 10000, tableId = 105, betMsg = {"msg":"大100","type":"big","money":100,num:""} 
+15:22:39.609 [main] INFO  com.ds.Main - Starting Main on jackson-PC with PID 17736 (G:\workspace\sts_workspace20160726\pc-bet\target\classes started by jackson in G:\workspace\sts_workspace20160726\pc-bet) 
+15:22:39.613 [main] INFO  com.ds.Main - No active profile set, falling back to default profiles: default 
+15:22:39.652 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47755401: startup date [Sun Oct 16 15:22:39 CST 2016]; root of context hierarchy 
+15:22:40.874 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a4030f6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+15:22:41.232 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+15:22:41.242 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat 
+15:22:41.243 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5 
+15:22:41.345 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+15:22:41.345 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1693 ms 
+15:22:41.486 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+15:22:41.488 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*] 
+15:22:41.488 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+15:22:42.047 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+15:22:42.077 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' 
+15:22:42.089 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+15:22:42.146 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final} 
+15:22:42.148 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+15:22:42.149 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+15:22:42.182 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final} 
+15:22:42.359 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+15:22:42.696 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory 
+15:22:42.790 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+15:22:43.139 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/bet/{tableId}/{gameType}/{term}/{username}],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public void com.ds.controller.BetInfoController.bet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) 
+15:22:43.143 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+15:22:43.144 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+15:22:43.183 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler] 
+15:22:43.245 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47755401: startup date [Sun Oct 16 15:22:39 CST 2016]; root of context hierarchy 
+15:22:43.408 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: c23ff3c5-2804-4ba9-8ef7-b26fc45f4b5e
+ 
+15:22:43.521 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@606d402, org.springframework.security.web.context.SecurityContextPersistenceFilter@36e36806, org.springframework.security.web.header.HeaderWriterFilter@feeffc0, org.springframework.security.web.authentication.logout.LogoutFilter@9871906, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@166a8658, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42471231, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a48d265, org.springframework.security.web.session.SessionManagementFilter@3c04cdb9, org.springframework.security.web.access.ExceptionTranslationFilter@104fb04b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49e0808e] 
+15:22:43.937 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+15:22:43.938 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+15:22:43.943 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+15:22:43.995 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+15:22:43.999 [main] INFO  com.ds.Main - Started Main in 4.716 seconds (JVM running for 5.045) 
+15:22:50.760 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+15:22:50.760 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+15:22:50.774 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms 
+15:22:50.808 [http-nio-8080-exec-1] INFO  com.ds.controller.BetInfoController - username = test, term = 10000, tableId = 105, betMsg = {"msg":"大100","type":"big","money":100,num:""} 
+15:23:05.705 [http-nio-8080-exec-2] INFO  com.ds.controller.BetInfoController - username = test, term = 10000, tableId = 105, betMsg = {"msg":"大100","type":"big","money":100,num:""} 
+15:23:32.073 [http-nio-8080-exec-3] INFO  com.ds.controller.BetInfoController - username = test, term = 10000, tableId = 105, betMsg = [{"msg":"大100","type":"big","money":100,num:""}] 
+15:31:58.084 [main] INFO  com.ds.Main - Starting Main on jackson-PC with PID 12720 (G:\workspace\sts_workspace20160726\pc-bet\target\classes started by jackson in G:\workspace\sts_workspace20160726\pc-bet) 
+15:31:58.095 [main] INFO  com.ds.Main - No active profile set, falling back to default profiles: default 
+15:31:58.136 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41dac188: startup date [Sun Oct 16 15:31:58 CST 2016]; root of context hierarchy 
+15:31:59.426 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46b05d6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+15:31:59.788 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+15:31:59.796 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat 
+15:31:59.797 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5 
+15:31:59.910 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+15:31:59.910 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1774 ms 
+15:32:00.053 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+15:32:00.055 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*] 
+15:32:00.055 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+15:32:00.520 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+15:32:00.549 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' 
+15:32:00.562 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+15:32:00.619 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final} 
+15:32:00.621 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+15:32:00.622 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+15:32:00.656 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final} 
+15:32:00.834 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+15:32:01.179 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory 
+15:32:01.275 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+15:32:01.634 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/bet/{tableId}/{gameType}/{term}/{username}],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public void com.ds.controller.BetInfoController.bet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) 
+15:32:01.638 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+15:32:01.638 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+15:32:01.672 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler] 
+15:32:01.729 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41dac188: startup date [Sun Oct 16 15:31:58 CST 2016]; root of context hierarchy 
+15:32:01.883 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 340705ee-0a97-4181-8ea2-944fbd87ed15
+ 
+15:32:01.989 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e1ad184, org.springframework.security.web.context.SecurityContextPersistenceFilter@65f7bb1f, org.springframework.security.web.header.HeaderWriterFilter@7adb80d8, org.springframework.security.web.authentication.logout.LogoutFilter@30663083, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10eb8f7e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63a8121b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52b150f6, org.springframework.security.web.session.SessionManagementFilter@33140c90, org.springframework.security.web.access.ExceptionTranslationFilter@1ae01111, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d1244a5] 
+15:32:02.380 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+15:32:02.382 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+15:32:02.386 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+15:32:02.437 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+15:32:02.442 [main] INFO  com.ds.Main - Started Main in 4.684 seconds (JVM running for 5.031) 
+15:32:07.815 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+15:32:07.815 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+15:32:07.831 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms 
+15:32:12.213 [http-nio-8080-exec-1] INFO  com.ds.controller.BetInfoController - username = test, term = 10000, tableId = 105, betMsg = [{"msg":"大100","type":"big","money":100,num:""}] 
+15:33:49.511 [main] INFO  com.ds.Main - Starting Main on jackson-PC with PID 10104 (G:\workspace\sts_workspace20160726\pc-bet\target\classes started by jackson in G:\workspace\sts_workspace20160726\pc-bet) 
+15:33:49.516 [main] INFO  com.ds.Main - No active profile set, falling back to default profiles: default 
+15:33:49.553 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64a9c13: startup date [Sun Oct 16 15:33:49 CST 2016]; root of context hierarchy 
+15:33:50.814 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8a9805a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+15:33:51.193 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+15:33:51.202 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat 
+15:33:51.203 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5 
+15:33:51.313 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+15:33:51.313 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1760 ms 
+15:33:51.466 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+15:33:51.468 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*] 
+15:33:51.469 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+15:33:51.939 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+15:33:51.971 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' 
+15:33:51.984 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+15:33:52.042 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final} 
+15:33:52.044 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+15:33:52.045 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+15:33:52.079 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final} 
+15:33:52.257 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+15:33:52.597 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory 
+15:33:52.692 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+15:33:53.066 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/bet/{tableId}/{gameType}/{term}/{username}],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public void com.ds.controller.BetInfoController.bet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) 
+15:33:53.070 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+15:33:53.071 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+15:33:53.106 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler] 
+15:33:53.158 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64a9c13: startup date [Sun Oct 16 15:33:49 CST 2016]; root of context hierarchy 
+15:33:53.310 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 8dc3d793-7900-47bc-8990-c27fb72cc56b
+ 
+15:33:53.419 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d1caa0c, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b05711a, org.springframework.security.web.header.HeaderWriterFilter@1a62b9a6, org.springframework.security.web.authentication.logout.LogoutFilter@3c8689b4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2df7088f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d8b0bc7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24e0192c, org.springframework.security.web.session.SessionManagementFilter@38003cf0, org.springframework.security.web.access.ExceptionTranslationFilter@1d8de61f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24601e7f] 
+15:33:53.803 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+15:33:53.805 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+15:33:53.809 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+15:33:53.861 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+15:33:53.867 [main] INFO  com.ds.Main - Started Main in 4.683 seconds (JVM running for 5.021) 
+15:33:58.038 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+15:33:58.038 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+15:33:58.053 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms 
+15:33:58.087 [http-nio-8080-exec-1] INFO  com.ds.controller.BetInfoController - username = test, term = 10000, tableId = 105, betMsg = [{"msg":"大100","type":"big","money":100,num:""}] 
+15:44:46.852 [main] INFO  com.ds.Main - Starting Main on jackson-PC with PID 15264 (G:\workspace\sts_workspace20160726\pc-bet\target\classes started by jackson in G:\workspace\sts_workspace20160726\pc-bet) 
+15:44:46.880 [main] INFO  com.ds.Main - No active profile set, falling back to default profiles: default 
+15:44:46.921 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2fc396df: startup date [Sun Oct 16 15:44:46 CST 2016]; root of context hierarchy 
+15:44:58.702 [main] INFO  com.ds.Main - Starting Main on jackson-PC with PID 18108 (G:\workspace\sts_workspace20160726\pc-bet\target\classes started by jackson in G:\workspace\sts_workspace20160726\pc-bet) 
+15:44:58.710 [main] INFO  com.ds.Main - No active profile set, falling back to default profiles: default 
+15:44:58.754 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f8c4a08: startup date [Sun Oct 16 15:44:58 CST 2016]; root of context hierarchy 
+15:45:00.034 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec27edfc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+15:45:00.254 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/' 
+15:45:00.259 [main] ERROR o.s.boot.SpringApplication - Application startup failed 
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:535)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.ds.Main.main(Main.java:18)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.context.embedded.AbstractConfigurableEmbeddedServletContainer.checkContextPath(AbstractConfigurableEmbeddedServletContainer.java:132)
+	at org.springframework.boot.context.embedded.AbstractConfigurableEmbeddedServletContainer.setContextPath(AbstractConfigurableEmbeddedServletContainer.java:120)
+	at org.springframework.boot.autoconfigure.web.ServerProperties.customize(ServerProperties.java:194)
+	at org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizerBeanPostProcessor.postProcessBeforeInitialization(EmbeddedServletContainerCustomizerBeanPostProcessor.java:68)
+	at org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizerBeanPostProcessor.postProcessBeforeInitialization(EmbeddedServletContainerCustomizerBeanPostProcessor.java:54)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:408)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	... 16 common frames omitted
+15:45:29.303 [main] INFO  com.ds.Main - Starting Main on jackson-PC with PID 17048 (G:\workspace\sts_workspace20160726\pc-bet\target\classes started by jackson in G:\workspace\sts_workspace20160726\pc-bet) 
+15:45:29.325 [main] INFO  com.ds.Main - No active profile set, falling back to default profiles: default 
+15:45:29.366 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79641ab1: startup date [Sun Oct 16 15:45:29 CST 2016]; root of context hierarchy 
+15:45:30.688 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b980d675] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+15:45:31.048 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+15:45:31.056 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat 
+15:45:31.057 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5 
+15:45:31.166 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/pc-bet] - Initializing Spring embedded WebApplicationContext 
+15:45:31.166 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1800 ms 
+15:45:31.308 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+15:45:31.310 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*] 
+15:45:31.310 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+15:45:31.807 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+15:45:31.838 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default' 
+15:45:31.851 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+15:45:31.910 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final} 
+15:45:31.911 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+15:45:31.913 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+15:45:31.947 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final} 
+15:45:32.128 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+15:45:32.474 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory 
+15:45:32.570 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+15:45:32.946 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/bet/{tableId}/{gameType}/{term}/{username}],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public void com.ds.controller.BetInfoController.bet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) 
+15:45:32.950 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+15:45:32.951 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+15:45:32.986 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler] 
+15:45:33.044 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79641ab1: startup date [Sun Oct 16 15:45:29 CST 2016]; root of context hierarchy 
+15:45:33.208 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 0c85fa6f-b72c-44a5-906b-fa0b911015c6
+ 
+15:45:33.325 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b750121, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b0e20c7, org.springframework.security.web.header.HeaderWriterFilter@f590dfe, org.springframework.security.web.authentication.logout.LogoutFilter@4c5a9e5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c24b408, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15856359, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e9d3c05, org.springframework.security.web.session.SessionManagementFilter@3cb70bf2, org.springframework.security.web.access.ExceptionTranslationFilter@6034a993, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11e24dc6] 
+15:45:33.744 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+15:45:33.745 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+15:45:33.749 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+15:45:33.801 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+15:45:33.805 [main] INFO  com.ds.Main - Started Main in 4.814 seconds (JVM running for 5.172) 
+15:45:47.521 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/pc-bet] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+15:45:47.521 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+15:45:47.538 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms 
+15:45:47.575 [http-nio-8080-exec-1] INFO  com.ds.controller.BetInfoController - username = test, term = 10000, tableId = 105, betMsg = [{"msg":"大100","type":"big","money":100,num:""}] 

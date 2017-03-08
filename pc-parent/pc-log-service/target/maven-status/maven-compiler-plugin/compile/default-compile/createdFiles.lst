@@ -1,0 +1,4 @@
+com\ds\log\repository\LogRepository.class
+com\ds\log\service\impl\LogServiceImpl.class
+com\ds\log\App.class
+com\ds\log\service\LogService.class

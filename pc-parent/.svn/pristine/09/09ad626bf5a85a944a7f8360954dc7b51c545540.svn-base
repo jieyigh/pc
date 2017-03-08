@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.0.0.207:3306/pc_game?useUnicode\=true&characterEncoding\=utf8&autoReconnect\=true
+    username: root
+#    password: MTA3YjM1MTlmMzM0
+    password: aYXL1OwrUtyIGhV7rQb1JrBYEknfhxaDvNsfVTVUl2Ud/8yfVfrTG80qsmmAUTTY7PvbU7MWa286za5QQSEJ1w==
+    connectionProperties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALIFw4CdWC+r5oRemDurOVtccwbpdh1VEC6VoNzHrppEzhwQyDFvW8gPzJUJ77VtlaS62c6H9BWJfq4Kc/XbPLsCAwEAAQ==
+    initialSize: 5
+    minIdle: 5
+    maxActive: 100
+    maxWait: 60000
+    validationQuery: SELECT 1
+    filters: config,stat
+    testWhileIdle: true
+#    removeAbandoned: true
+ #   removeAbandonedTimeout: 180
+  #  logAbandoned: true
+
+  jpa:
+    properties:
+      hibernate:
+        show_sql: false
+
+server:
+  port: 8090
+  context-path: /pc-history-data
+
+security:
+  basic:
+    enabled: false
+    
+management:
+  security:
+    enabled: false
+
+yesterday:
+  num: 20000
+    

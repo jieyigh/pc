@@ -1,0 +1,9 @@
+{
+  "groups": [{
+    "name": "self",
+    "type": "com.ds.betinfo.record.config.Self",
+    "sourceType": "com.ds.betinfo.record.config.Self"
+  }],
+  "properties": [],
+  "hints": []
+}

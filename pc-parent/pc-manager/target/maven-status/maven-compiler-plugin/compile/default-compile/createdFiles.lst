@@ -1,0 +1,17 @@
+com\ds\manager\site\controller\SiteConfigController.class
+com\ds\manager\limit\service\LimitManagerService.class
+com\ds\manager\odds\service\OddsManagerService.class
+com\ds\manager\loss\bonus\controller\LossBonusController.class
+com\ds\manager\table\controller\TableConfigController.class
+com\ds\manager\advice\RequestAdvice.class
+com\ds\manager\lottery\controller\LotteryResultController.class
+com\ds\manager\api\config\Swagger2Config.class
+com\ds\manager\Main.class
+com\ds\manager\activities\controller\ActivityController.class
+com\ds\manager\config\WebAppConfig.class
+com\ds\manager\limit\controller\BetLimitController.class
+com\ds\manager\room\controller\RoomConfigController.class
+com\ds\manager\aspect\WebLogAspect.class
+com\ds\manager\odds\controller\BetOddController.class
+com\ds\manager\interceptor\ValidInterceptor.class
+com\ds\manager\loss\bonus\service\LossBonusService.class

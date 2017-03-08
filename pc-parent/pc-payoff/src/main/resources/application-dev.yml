@@ -1,0 +1,52 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.0.0.207:3306/pc_game?useUnicode\=true&characterEncoding\=utf8&autoReconnect\=true
+    username: root
+    password: aYXL1OwrUtyIGhV7rQb1JrBYEknfhxaDvNsfVTVUl2Ud/8yfVfrTG80qsmmAUTTY7PvbU7MWa286za5QQSEJ1w==
+    connectionProperties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALIFw4CdWC+r5oRemDurOVtccwbpdh1VEC6VoNzHrppEzhwQyDFvW8gPzJUJ77VtlaS62c6H9BWJfq4Kc/XbPLsCAwEAAQ==
+    initialSize: 20
+    minIdle: 10
+    maxActive: 100
+    maxWait: 60000
+    time-between-eviction-runs-millis: 60000
+    validationQuery: SELECT 1
+    filters: config,stat,wall
+    testWhileIdle: true
+  activemq:
+    broker-url: failover:(tcp://10.0.1.128:61616,tcp://10.0.1.129:61616,tcp://10.0.1.130:61616)?initialReconnectDelay=100&timeout=3000&jms.optimizeAcknowledge=true&jms.optimizeAcknowledgeTimeOut=30000&jms.redeliveryPolicy.maximumRedeliveries=6
+    in-memory: false
+    user: admin
+    password: admin
+    packages:
+      trust-all: true
+    pool:
+      max-connections: 500
+      enabled: true
+      configuration:
+        block-if-session-pool-is-full: true
+        max-connections: 500
+        reconnect-on-exception: true
+      idle-timeout: 5
+      expiry-timeout: 5
+  jms:
+    listener:
+      acknowledge-mode: auto
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        connection:
+          autoReconnect: true
+          autoReconnectForPools: true
+          is-connection-validation-required: true
+server:
+  port: 18099
+  context-path: /pc-payoff
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
