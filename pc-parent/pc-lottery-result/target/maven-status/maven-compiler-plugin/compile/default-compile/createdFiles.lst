@@ -1,5 +1,0 @@
-com\ds\lottery\result\controller\LotteryResultController.class
-com\ds\lottery\result\service\LotteryResultService.class
-com\ds\lottery\result\service\impl\LotteryResultServiceImpl.class
-com\ds\lottery\result\vo\LotteryResultParams.class
-com\ds\lottery\result\Main.class

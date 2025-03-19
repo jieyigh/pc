@@ -1,5 +1,0 @@
-com\ds\odds\Main.class
-com\ds\odds\controller\BetOddController.class
-com\ds\odds\service\impl\BetOddServiceImpl.class
-com\ds\odds\vo\BetOddParams.class
-com\ds\odds\service\BetOddService.class

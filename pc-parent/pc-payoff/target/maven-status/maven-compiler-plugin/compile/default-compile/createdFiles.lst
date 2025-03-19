@@ -1,5 +1,0 @@
-com\ds\entity\PayOffRecord.class
-com\ds\payoff\repository\PayOffRecordRepository.class
-com\ds\payoff\service\PayOffService.class
-com\ds\payoff\vo\DxdsVo.class
-com\ds\payoff\Main.class

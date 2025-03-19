@@ -1,8 +1,0 @@
-com\ds\redis\provider\common\UrlConfigCache.class
-com\ds\redis\provider\limit\BetLimitCache.class
-com\ds\redis\provider\play\PlayCache.class
-com\ds\redis\provider\service\CacheService.class
-com\ds\redis\provider\site\SiteConfigCache.class
-com\ds\redis\provider\Main.class
-com\ds\redis\provider\odds\BetOddsCache.class
-com\ds\redis\provider\service\impl\CacheServiceImpl.class
